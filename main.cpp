@@ -38,11 +38,13 @@ int findIndexOfMax(Ability * array[]){
     }
     return indexOfMax;
 }
+/*
 void decrementCooldowns(){
     for (int i = 0; i < cooldownVector.size(); ++i){
         
     }
 }
+*/
 void simulateRotation(Ability * array[]){
     //myMap[array[0]] = 0.0;
     int indexOfMax = findIndexOfMax(array);
@@ -50,6 +52,7 @@ void simulateRotation(Ability * array[]){
     usleep(1800000); //1.8 seconds (global cooldown) : usleep takes in a parameter of microseconds
     decrementCooldowns();
 }
+
 
 int main() {
     
